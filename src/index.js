@@ -1,36 +1,36 @@
 import './style.css';
-import renderScores from './modules/renderScores.js'
+import renderScores from './modules/renderScores.js';
 
-let scores = [
+const scores = [
   {
     id: Date.now(),
     name: 'otmane',
-    score: 190
+    score: 190,
   },
   {
     id: Date.now(),
     name: 'kaddour',
-    score: 170
+    score: 170,
   },
   {
     id: Date.now(),
     name: 'jilali',
-    score: 100
+    score: 100,
   },
   {
     id: Date.now(),
     name: 'hamouda',
-    score: 97
+    score: 97,
   },
   {
     id: Date.now(),
     name: 'khaoula',
-    score: 300
+    score: 300,
   },
   {
     id: Date.now(),
     name: 'mohammed',
-    score: 999
+    score: 999,
   },
 ];
 

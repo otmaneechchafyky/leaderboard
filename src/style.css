@@ -29,9 +29,9 @@ main {
 }
 
 .scores {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .refresh-container {
@@ -45,7 +45,7 @@ p {
 }
 
 .btn {
-  padding: .5rem;
+  padding: 0.5rem;
   box-shadow: 4px 4px black;
   height: 2rem;
   width: 5rem;
@@ -55,16 +55,16 @@ p {
   border: 2px solid black;
 }
 
-ul :nth-child(even){
-    background-color: rgba(128, 128, 128, 0.24);
+ul :nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.24);
 }
 
-ul li :nth-child(even){
-    background-color: transparent;
+ul li :nth-child(even) {
+  background-color: transparent;
 }
 
 .scores-list li {
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .new-score {
@@ -75,7 +75,7 @@ ul li :nth-child(even){
 
 .new-score input {
   height: 2rem;
-  padding: .3rem;
+  padding: 0.3rem;
   border: 2px solid black;
 }
 
