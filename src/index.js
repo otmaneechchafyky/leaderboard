@@ -1,13 +1,38 @@
-import _ from 'lodash';
 import './style.css';
+import renderScores from './modules/renderScores.js'
 
-function component() {
-    const element = document.createElement('div');
+let scores = [
+  {
+    id: Date.now(),
+    name: 'otmane',
+    score: 190
+  },
+  {
+    id: Date.now(),
+    name: 'kaddour',
+    score: 170
+  },
+  {
+    id: Date.now(),
+    name: 'jilali',
+    score: 100
+  },
+  {
+    id: Date.now(),
+    name: 'hamouda',
+    score: 97
+  },
+  {
+    id: Date.now(),
+    name: 'khaoula',
+    score: 300
+  },
+  {
+    id: Date.now(),
+    name: 'mohammed',
+    score: 999
+  },
+];
 
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const scoreContainer = document.querySelector('.scores-list');
+renderScores(scores, scoreContainer);

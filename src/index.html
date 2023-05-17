@@ -6,7 +6,23 @@
     <title>Wbpack Exercise</title>
 </head>
 <body>
-    <h1>Hello webpack first try succeed alhamdulillah!</h1>
-    <h3>kokookokokokokoko</h3>
+    <header>
+        <h1>Leaderboard</h1>
+    </header>
+    <main>
+        <section class="scores">
+            <div class="refresh-container">
+                <p>Recent scores</p>
+                <button type="button" class="btn">Refresh</button>
+            </div>
+            <ul class="scores-list"></ul>
+        </section>
+        <form class="new-score">
+            <p>Add your score</p>
+            <input type="text" name="name" id="name" placeholder="Your name">
+            <input type="number" name="score" id="score" placeholder="Your score">
+            <input type="submit" value="submit" class="btn">
+        </form>
+    </main>
 </body>
 </html>
