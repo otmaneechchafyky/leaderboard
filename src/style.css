@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.refresh-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 0.5rem;
+  box-shadow: 4px 4px black;
+  height: 2rem;
+  width: 5rem;
+}
+
+.scores-list {
+  border: 2px solid black;
+}
+
+ul :nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.24);
+}
+
+ul li :nth-child(even) {
+  background-color: transparent;
+}
+
+.scores-list li {
+  padding: 0.3rem;
+}
+
+.new-score {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.new-score input {
+  height: 2rem;
+  padding: 0.3rem;
+  border: 2px solid black;
+}
+
+.new-score input[type='submit'] {
+  align-self: self-end;
+}
