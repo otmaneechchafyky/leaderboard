@@ -15,10 +15,6 @@
 <h1 align="center">Leaderboard</h1>
 </div>
 
-
-
-
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -47,7 +43,7 @@
 # 📖 [Leaderboard] <a name="about-project"></a>
 
 
-**To-Do List** is a project to send and get data from API.
+**Leaderboard** is a project to send and get data from API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,8 +57,6 @@
     <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</a></li>
   </ul>
 </details>
-
-
 
 <!-- Features -->
 
@@ -87,13 +81,12 @@
 
 To get a local copy up and running, follow these steps:
 
-- Clone this repo. 
-- Change whatever you like.
-
-
 ### Prerequisites
 
-To run this project you need: To clone or fork and run it in a browser
+In order to run this project you need the following tools:
+- Node.js in your computer
+- IDE(e.g.: Vscode,...)
+- Terminal
 
 
 ### Setup
@@ -103,36 +96,35 @@ Clone this repository to your desired folder:
 Example commands:
 
 ```sh
-  cd my-folder
+  cd folder-name
   git clone https://github.com/otmaneechchafyky/leaderboard.git
 ```
 
-
-For more information on how to clone or fork a repository:
-- <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">How to clone a repo</a>
-- <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">How to fork a repo</a>
-
 ### Install
-
-- n/a
-
-### Usage
-
-To run the project, open with **index.html** with any web browser.
-
-For example using Linux:
 
 ```sh
   cd leaderboard
-  google-chrome index.html
+
+  npm install or npm i
+```
+
+- Run an optimized build for prodction:
+```
+  npm run build
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm start
+
 ```
 
 ### Run tests
 
 - n/a
-
-
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
