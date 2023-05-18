@@ -53,6 +53,12 @@ p {
 
 .scores-list {
   border: 2px solid black;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.border {
+  border-color: red;
 }
 
 ul :nth-child(even) {
