@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wbpack Exercise</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Leaderboard</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M3 21q-.425 0-.713-.288T2 20V10q0-.425.288-.713T3 9h3.5q.425 0 .713.288T7.5 10v10q0 .425-.288.713T6.5 21H3Zm7.25 0q-.425 0-.713-.288T9.25 20V4q0-.425.288-.713T10.25 3h3.5q.425 0 .713.288T14.75 4v16q0 .425-.288.713T13.75 21h-3.5Zm7.25 0q-.425 0-.713-.288T16.5 20v-8q0-.425.288-.713T17.5 11H21q.425 0 .713.288T22 12v8q0 .425-.288.713T21 21h-3.5Z"
+        />
+      </svg>
+      <h1>Leaderboard</h1>
     </header>
     <main>
-        <section class="scores">
-            <div class="refresh-container">
-                <p>Recent scores</p>
-                <button type="button" class="btn">Refresh</button>
-            </div>
-            <ul class="scores-list"></ul>
-        </section>
-        <form class="new-score">
-            <p>Add your score</p>
-            <input type="text" name="name" id="name" placeholder="Your name">
-            <input type="number" name="score" id="score" placeholder="Your score">
-            <button type="submit" class="btn2">submit</button>
-        </form>
+      <section class="scores">
+        <div class="refresh-container">
+          <p>Recent scores</p>
+          <button type="button" class="btn">Display scores</button>
+        </div>
+        <ul class="scores-list"></ul>
+      </section>
+      <form class="new-score">
+        <p>Add your score</p>
+        <div class="inputs">
+          <input type="text" name="name" id="name" placeholder="Your name" />
+          <input
+            type="number"
+            name="score"
+            id="score"
+            placeholder="Your score"
+          />
+          <button type="submit" class="btn btn2">submit</button>
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>
