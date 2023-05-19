@@ -1,5 +1,4 @@
 const renderScores = (arr, container) => {
-
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
