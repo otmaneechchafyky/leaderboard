@@ -90,7 +90,7 @@ p {
 }
 
 .border {
-  border-color: green;
+  border-color: blue;
 }
 
 ul :nth-child(even) {
