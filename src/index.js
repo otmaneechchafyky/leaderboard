@@ -1,38 +1,28 @@
 import './style.css';
-import renderScores from './modules/renderScores.js';
+import setScores from './modules/setScores.js';
+import getScores from './modules/getScores.js';
 
-const scores = [
-  {
-    id: Date.now(),
-    name: 'otmane',
-    score: 190,
-  },
-  {
-    id: Date.now(),
-    name: 'kaddour',
-    score: 170,
-  },
-  {
-    id: Date.now(),
-    name: 'jilali',
-    score: 100,
-  },
-  {
-    id: Date.now(),
-    name: 'hamouda',
-    score: 97,
-  },
-  {
-    id: Date.now(),
-    name: 'khaoula',
-    score: 300,
-  },
-  {
-    id: Date.now(),
-    name: 'mohammed',
-    score: 999,
-  },
-];
+const gameId = localStorage.getItem('id');
 
-const scoreContainer = document.querySelector('.scores-list');
-renderScores(scores, scoreContainer);
+document.querySelector('.btn2').addEventListener('click', (ev) => {
+  ev.preventDefault();
+
+  const nameValue = document.getElementById('name').value;
+  const scoreValue = document.getElementById('score').value;
+  const form = document.querySelector('.new-score');
+
+  if (nameValue !== '' && scoreValue !== '') {
+    setScores(gameId, nameValue, scoreValue);
+    form.reset();
+  } else {
+    form.classList.add('border');
+  }
+});
+
+const show = () => {
+  document.querySelector('.btn').addEventListener('click', () => {
+    getScores(gameId);
+  });
+};
+
+show();

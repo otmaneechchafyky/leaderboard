@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
 
+:root {
+  --so-green: #1b4d3e;
+  --green: #32de84;
+  --light-green: #4fffb0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: var(--so-green);
 }
 
 li {
@@ -12,51 +23,78 @@ li {
 }
 
 header {
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  gap: 1rem;
+  transition: 0.3s ease;
 }
 
 header h1 {
   font-size: 3rem;
+  color: var(--light-green);
 }
 
 main {
   display: flex;
-  justify-content: center;
-  gap: 5rem;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
 .scores {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+  width: 65%;
 }
 
 .refresh-container {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  padding: 0 7%;
 }
 
 p {
   font-size: 2rem;
+  border-bottom: 2px solid #32de8560;
 }
 
 .btn {
   padding: 0.5rem;
-  box-shadow: 4px 4px black;
-  height: 2rem;
-  width: 5rem;
+  height: 3.5rem;
+  width: 14rem;
+  font-size: 1.5rem;
+  background-color: var(--green);
+  border: 0;
+  border-radius: 5px;
+  color: var(--so-green);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: #ffffffde;
+  box-shadow: -1px 5px 47px -8px rgba(79, 255, 176, 1);
 }
 
 .scores-list {
-  border: 2px solid black;
+  border: 2px solid var(--light-green);
+  border-radius: 5px;
+  height: 350px;
+  width: 86%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.border {
+  border-color: red;
 }
 
 ul :nth-child(even) {
-  background-color: rgba(128, 128, 128, 0.24);
+  background-color: #4fffb02c;
 }
 
 ul li :nth-child(even) {
@@ -64,21 +102,53 @@ ul li :nth-child(even) {
 }
 
 .scores-list li {
-  padding: 0.3rem;
+  padding: 0.4rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 1rem;
+}
+
+.scores-list li .score-showed {
+  color: #9bf3cb;
+}
+
+.two {
+  font-size: 1.3rem;
 }
 
 .new-score {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  width: 35%;
+}
+
+.new-score .inputs {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .new-score input {
-  height: 2rem;
-  padding: 0.3rem;
-  border: 2px solid black;
+  height: 4rem;
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  background-color: #4fffb065;
+  color: #fff;
+  font-size: 1.5rem;
+  outline: transparent;
+  border-radius: 5px;
 }
 
-.new-score input[type='submit'] {
-  align-self: self-end;
+.new-score input::placeholder {
+  color: #ffffff6c;
+}
+
+.new-score button {
+  width: 100%;
 }
