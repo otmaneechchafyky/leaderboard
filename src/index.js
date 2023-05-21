@@ -4,8 +4,8 @@ import getScores from './modules/getScores.js';
 
 const gameId = localStorage.getItem('id');
 
-document.querySelector('.btn2').addEventListener('click', (ev) => {
-  ev.preventDefault();
+document.querySelector('.btn2').addEventListener('click', (e) => {
+  e.preventDefault();
 
   const nameValue = document.getElementById('name').value;
   const scoreValue = document.getElementById('score').value;

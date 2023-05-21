@@ -1,11 +1,11 @@
 const setId = async () => {
   const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-  const obj = {
-    name: 'My cool new game',
+  const object = {
+    name: 'My cool new Game',
   };
   const resp = await fetch(url, {
     method: 'POST',
-    body: JSON.stringify(obj),
+    body: JSON.stringify(object),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
