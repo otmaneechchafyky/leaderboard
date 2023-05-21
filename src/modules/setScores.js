@@ -11,8 +11,8 @@ const setScores = async (ID, userName, yourScore) => {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
-  const jsn = await resp.json();
-  return jsn;
+  const toJason = await resp.json();
+  return toJason;
 };
 
 export default setScores;
