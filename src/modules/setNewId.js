@@ -12,6 +12,7 @@ const setId = async () => {
   });
   const jsn = await resp.json();
   const id = await jsn.result.slice(14, 34);
+  console.log(id)
   localStorage.setItem('id', id);
   return id;
 };
