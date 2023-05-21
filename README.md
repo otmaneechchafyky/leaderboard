@@ -30,12 +30,12 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -125,7 +125,6 @@ To run the project, execute the following command:
 ### Run tests
 
 - n/a
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
